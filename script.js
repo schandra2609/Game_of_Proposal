@@ -36,12 +36,12 @@ document.addEventListener('DOMContentLoaded', function() {
     no.addEventListener('mouseenter', function() {
         moveButton();
         counter++;
-        counter <= 10 ? playAudio(audioAayein) : playAudio(audioMc);
+        counter <= 10 ? playAudio(audioAayein) : playAudio(audioAayein);
     });
 
     no.addEventListener('click', function() {
         moveButton();
         counter++;
-        counter <= 10 ? playAudio(audioAayein) : playAudio(audioMc);
+        counter <= 10 ? playAudio(audioAayein) : playAudio(audioAayein);
     });
 });
