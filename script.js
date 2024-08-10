@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const no = document.getElementById('no');
     const audioWow = document.getElementById('wow');
     const audioAayein = document.getElementById('aayein');
-    const audioMc  = document.getElementById('madar');
 
     const contRect = container.getBoundingClientRect();
     const noRect = no.getBoundingClientRect();
@@ -35,13 +34,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     no.addEventListener('mouseenter', function() {
         moveButton();
-        counter++;
-        counter <= 10 ? playAudio(audioAayein) : playAudio(audioAayein);
+        playAudio(audioAayein);
     });
 
     no.addEventListener('click', function() {
         moveButton();
-        counter++;
-        counter <= 10 ? playAudio(audioAayein) : playAudio(audioAayein);
+        playAudio(audioAayein);
     });
 });
